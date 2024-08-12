@@ -1,13 +1,160 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Professional Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #007bff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .about, .portfolio, .contact {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .about h2, .portfolio h2, .contact h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .about img, .portfolio img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .portfolio video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .portfolio .item {
+            margin-bottom: 20px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact button {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .contact button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007bff;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
 
-<head> 
-    <title>HTML Tutorial</title> 
-</head> 
+    <header>
+        <h1>Harry's Professional Portfolio</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<body> 
-    <h2>Welcome To GFG</h2> 
-    <p>Hello World! I Don't Give a Bug </p> 
-</body> 
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <img src="your-image.jpg" alt="Your Image">
+            <p>Welcome to my professional portfolio. I am passionate about [your field] and have experience in [brief description]. My goal is to [your goal or mission].</p>
+        </section>
 
+        <section id="portfolio" class="portfolio">
+            <h2>Portfolio</h2>
+
+            <div class="item">
+                <h3>Project Title</h3>
+                <img src="project-image.jpg" alt="Project Image">
+                <p>Brief description of the project. This section highlights your achievements, skills, and contributions.</p>
+            </div>
+
+            <div class="item">
+                <h3>Video Title</h3>
+                <video controls>
+                    <source src="your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Brief description of the video content.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form action="your-form-handler.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Harry. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
